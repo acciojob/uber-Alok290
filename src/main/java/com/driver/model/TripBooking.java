@@ -1,7 +1,5 @@
 package com.driver.model;
 
-import io.swagger.models.auth.In;
-
 import javax.persistence.*;
 
 
@@ -11,7 +9,7 @@ public class TripBooking {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private Integer tripBookingId;
+    private Integer Id;
 
     private String fromLocation;
 
@@ -28,12 +26,12 @@ public class TripBooking {
     @JoinColumn
     private Driver driver;
 
-    public Integer getTripBookingId() {
-        return tripBookingId;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setTripBookingId(Integer tripBookingId) {
-        this.tripBookingId = tripBookingId;
+    public void setId(Integer id) {
+        this.Id = id;
     }
 
     public String getFromLocation() {

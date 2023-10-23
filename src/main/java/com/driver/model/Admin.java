@@ -9,9 +9,9 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer adminId;
+    private Integer Id;
 
-    private String userName;
+    private String Username;
 
     private String password;
 
@@ -20,26 +20,26 @@ public class Admin {
 
     }
 
-    public Admin(Integer adminId, String userName, String password) {
-        this.adminId = adminId;
-        this.userName = userName;
+    public Admin(Integer Id, String Username, String password) {
+        this.Id = Id;
+        this.Username = Username;
         this.password = password;
     }
 
-    public Integer getAdminId() {
-        return adminId;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
+    public void setId(Integer id) {
+        this.Id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return Username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.Username = username;
     }
 
     public String getPassword() {
