@@ -9,7 +9,7 @@ public class TripBooking {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private Integer Id;
+    private Integer TripBookingId;
 
     private String fromLocation;
 
@@ -26,12 +26,12 @@ public class TripBooking {
     @JoinColumn
     private Driver driver;
 
-    public Integer getId() {
-        return Id;
+    public Integer getTripBookingId() {
+        return TripBookingId;
     }
 
-    public void setId(Integer id) {
-        this.Id = id;
+    public void setTripBookingId(Integer tripBookingId) {
+        this.TripBookingId = tripBookingId;
     }
 
     public String getFromLocation() {

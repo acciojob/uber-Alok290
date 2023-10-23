@@ -13,7 +13,7 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
+    private Integer CustomerId;
 
 
     private String Mobile;
@@ -37,18 +37,18 @@ public class Customer {
 
     }
 
-    public Customer(Integer Id, String Mobile, String password) {
-        this.Id = Id;
+    public Customer(Integer CustomerId, String Mobile, String password) {
+        this.CustomerId = CustomerId;
         this.Mobile = Mobile;
         this.password = password;
     }
 
-    public Integer getId() {
-        return Id;
+    public Integer getCustomerId() {
+        return CustomerId;
     }
 
-    public void setId(Integer id) {
-        this.Id = id;
+    public void setCustomerId(Integer customerId) {
+        this.CustomerId = customerId;
     }
 
     public String getMobile() {
